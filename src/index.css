@@ -7,7 +7,7 @@
     --hover-link-color: #21a1f1;
     --active-link-color: #467aff;
     --link-size: 1.25em;
-    --btn-text-size: 0.75em;
+    --btn-text-size: 1em;
     --btn-color: #52b7ef;
 }
 
@@ -46,6 +46,16 @@ button {
     font-family: inherit;
 }
 
+input {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    color: var(--text-color);
+    background-color: transparent;
+    border: 1px solid var(--btn-color);
+    border-radius: 0.25em;
+    font-family: inherit;
+}
+
 .app-header {
     background-color: var(--header-bg-color);
     padding: 1.25em;
@@ -66,4 +76,10 @@ button {
     display: flex;
     gap: 1em;
     margin-top: 1em;
+}
+
+.post-filter-form {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
 }
