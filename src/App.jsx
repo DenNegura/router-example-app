@@ -3,14 +3,15 @@ import {HomePage} from "./pages/HomePage.jsx";
 import {PostsPage} from "./pages/PostsPage.jsx";
 import {NotFoundPage} from "./pages/NotFoundPage.jsx";
 import {PostPage} from "./pages/PostPage.jsx";
+import {ExtendNavLink} from "./components/ExtendNavLink.jsx";
 
 function App() {
     return (
         <>
             <header className={"app-header"}>
                 <nav>
-                    <NavLink to={"/"}>Home</NavLink>
-                    <NavLink to={"/posts"}>Posts</NavLink>
+                    <ExtendNavLink to={"/"}>Home</ExtendNavLink>
+                    <ExtendNavLink to={"/posts"}>Posts</ExtendNavLink>
                 </nav>
             </header>
             <div className={"app-page-container"}>
