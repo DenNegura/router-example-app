@@ -1,17 +1,16 @@
-import {Link, Route, Routes} from "react-router";
+import {NavLink, Route, Routes} from "react-router";
 import {HomePage} from "./pages/HomePage.jsx";
 import {PostsPage} from "./pages/PostsPage.jsx";
 import {NotFoundPage} from "./pages/NotFoundPage.jsx";
 import {PostPage} from "./pages/PostPage.jsx";
 
 function App() {
-
     return (
         <>
             <header className={"app-header"}>
                 <nav>
-                    <Link to={"/"}>Home</Link>
-                    <Link to={"/posts"}>Posts</Link>
+                    <NavLink to={"/"}>Home</NavLink>
+                    <NavLink to={"/posts"}>Posts</NavLink>
                 </nav>
             </header>
             <div className={"app-page-container"}>
