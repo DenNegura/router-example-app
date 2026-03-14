@@ -10,7 +10,7 @@ function PostPage() {
         fetch("https://dummyjson.com/posts/" + id)
             .then((res) => res.json())
             .then(setPost)
-    })
+    }, [])
     return (
         <div>
             {post ?
