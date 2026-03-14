@@ -7,7 +7,6 @@ function AppLayout() {
                 <nav>
                     <NavLink to={"/"}>Home</NavLink>
                     <NavLink to={"/posts"}>Posts</NavLink>
-                    <NavLink to={"/private"}>Private</NavLink>
                 </nav>
             </header>
             <div className={"app-page-container"}>
