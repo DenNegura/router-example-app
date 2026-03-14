@@ -7,6 +7,8 @@
     --hover-link-color: #21a1f1;
     --active-link-color: #467aff;
     --link-size: 1.25em;
+    --btn-text-size: 0.75em;
+    --btn-color: #52b7ef;
 }
 
 body {
@@ -33,6 +35,17 @@ a.active {
     text-decoration: underline;
 }
 
+button {
+    padding: 0.5em 1em;
+    background-color: transparent;
+    border: 1px solid var(--btn-color);
+    border-radius: 0.25em;
+    font-size: var(--btn-text-size);
+    color: var(--btn-color);
+    cursor: pointer;
+    font-family: inherit;
+}
+
 .app-header {
     background-color: var(--header-bg-color);
     padding: 1.25em;
@@ -46,4 +59,11 @@ a.active {
 
 .app-page-container {
     padding: 1em 1.5em;
+}
+
+/* NotFoundPage */
+.notfound-button-container {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
 }
