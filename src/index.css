@@ -60,10 +60,20 @@ input {
     background-color: var(--header-bg-color);
     padding: 1.25em;
     border-bottom: 1px solid #333;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .app-header nav {
     display: flex;
+    gap: 1em;
+}
+
+.app-header .user-info {
+    display: flex;
+    align-items: center;
     gap: 1em;
 }
 
@@ -78,7 +88,7 @@ input {
     margin-top: 1em;
 }
 
-.post-filter-form {
+.post-filter-form, .login-form {
     display: flex;
     gap: 1em;
     margin-bottom: 1em;

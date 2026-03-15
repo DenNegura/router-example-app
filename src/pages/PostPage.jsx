@@ -1,4 +1,4 @@
-import {useParams} from "react-router";
+import {useLocation, useParams} from "react-router";
 import {useEffect, useState} from "react";
 
 function PostPage() {
