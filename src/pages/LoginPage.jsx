@@ -3,9 +3,7 @@ import {useAuth} from "../providers/AuthProvider.jsx";
 
 function LoginPage() {
     const {signIn} = useAuth();
-
     const location = useLocation();
-
     const navigate = useNavigate();
 
     const from = location.state?.from?.pathname;

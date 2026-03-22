@@ -5,8 +5,6 @@ function NotFoundPage() {
     const navigate = useNavigate();
     const location = useLocation();
 
-    console.log(location);
-
     return (
         <div>
             <h1>404 - Page Not Found</h1>
