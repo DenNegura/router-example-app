@@ -1,11 +1,13 @@
 import {Route, Routes} from "react-router";
 import {HomePage} from "./pages/HomePage.jsx";
-import {PostsPage} from "./pages/PostsPage.jsx";
 import {NotFoundPage} from "./pages/NotFoundPage.jsx";
-import {PostPage} from "./pages/PostPage.jsx";
 import {AppLayout} from "./pages/AppLayout.jsx";
 import {ProtectedRoute} from "./components/ProtectedRoute.jsx";
 import {LoginPage} from "./pages/LoginPage.jsx";
+import {lazy} from "react";
+
+const PostsPage = lazy(() => import("./pages/PostsPage.jsx"));
+const PostPage = lazy(() => import("./pages/PostPage.jsx"));
 
 function App() {
     return (<>

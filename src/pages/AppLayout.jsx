@@ -1,5 +1,6 @@
 import {Link, NavLink, Outlet, useNavigate} from "react-router";
 import {useAuth} from "../providers/AuthProvider.jsx";
+import {Suspense} from "react";
 
 function AppLayout() {
     const {user, signOut} = useAuth();
@@ -25,7 +26,9 @@ function AppLayout() {
                 </div>
             </header>
             <div className={"app-page-container"}>
-                <Outlet/>
+                <Suspense fallback={<h1>Loading...</h1>}>
+                    <Outlet/>
+                </Suspense>
             </div>
         </>
     )

@@ -35,4 +35,4 @@ function PostsPage() {
     )
 }
 
-export {PostsPage}
+export default PostsPage;

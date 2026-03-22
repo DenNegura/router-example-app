@@ -24,4 +24,4 @@ function PostPage() {
     )
 }
 
-export {PostPage}
+export default PostPage;
